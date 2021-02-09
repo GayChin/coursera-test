@@ -1,36 +1,56 @@
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-65 { font-size: 65px; }
+.material-icons.butter { color: #F2D388; }
 body {
   font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
-  font-family: 'Oxygen', sans-serif;
+  color: #black;
+  background-color: #A7D2CB;
+  font-family: 'Hammersmith One', sans-serif;
 }
 
 /** HEADER **/
 #header-nav {
-  background-color: #f6b319;
+  background-color: #FEFCEF;
   border-radius: 0;
   border: 0;
 }
 
 #logo-img {
-  background: url('../images/restaurant-logo_large.png') no-repeat;
-  width: 150px;
-  height: 150px;
   margin: 10px 15px 10px 0;
 }
 
 .navbar-brand {
-  padding-top: 25px;
+  padding-top: 17px;
 }
 
 .navbar-brand h1 { /* Restaurant name */
-  font-family: 'Lora', serif;
-  color: #557c3e;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: bold;
+  font-family: 'Hammersmith One', sans-serif;
+  color: #1E1E1E;
+  text-align: left;
+  font-size: 2.5em;
   text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
+  margin-top: 4px;
   margin-bottom: 0;
   line-height: .75;
 }
@@ -38,11 +58,100 @@ body {
   text-decoration: none;
 }
 .navbar-brand p { /* Kosher cert */
-  color: #000;
-  text-transform: uppercase;
+  color: ##C5C6C7;
+  text-transform:capitalize;
   font-size: .7em;
-  margin-top: 15px;
+  margin-top: 4px;
 }
-.navbar-brand p span { /* Star-K */
-  vertical-align: middle;
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid #C98474;
 }
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -65px;
+}
+
+/* End of header */
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand {
+
+    height: 80px;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 5px;
+    padding-left: 0px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+
+  }
+
+  .navbar-brand span { /* Restaurant name */
+    font-size: 0.85em; /* 1vw = 1% of viewport width */
+  }
+
+  .navbar-brand p {
+    padding-top: -2px;
+  }
+
+  .material-icons.xs-18 {
+    font-size: 50px;
+    padding-left: 10px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+}
+
+#menu-categories-title {
+  color: black;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size : 36px;
+}
+.menu-tile{
+  background-color: #c98474;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 3px solid black;
+  margin-bottom: 30px;
+
+}
+.menu-tile .menu-title{
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.menu-tile p{
+  font-size: 18px;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+}
+  /* End Header */
